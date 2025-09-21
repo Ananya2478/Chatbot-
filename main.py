@@ -3,7 +3,7 @@ import google.generativeai as genai
 import random
 
 # Set up Google AI API key
-API_KEY = "AIzaSyAjUUE5avUriBjIAaCuTmVJ9cKkSR28tBI"  # Replace with your actual Google AI Studio API key
+API_KEY = "Your-API-Key"  # Replace with your actual Google AI Studio API key
 genai.configure(api_key=API_KEY)
 
 # Sample fallback responses (used if API fails)
@@ -50,4 +50,5 @@ if prompt := st.chat_input("Type your message here..."):
         st.write(response)
 
     # Add assistant response to chat history
+
     st.session_state.messages.append({"role": "assistant", "content": response})
